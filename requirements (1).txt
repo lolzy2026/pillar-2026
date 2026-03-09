@@ -1,0 +1,28 @@
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+
+# Redis
+redis[hiredis]==5.0.1
+
+# PostgreSQL
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+
+# LangChain & LangGraph
+langchain==0.1.0
+langgraph==0.0.20
+langchain-mcp-adapters==0.1.0
+
+# LangGraph Checkpoint
+langgraph-checkpoint-postgres==0.0.5
+
+# MCP SDK (dependency of langchain-mcp-adapters)
+mcp==0.9.0
+
+# HTTP Client
+httpx==0.26.0
+
+# Utilities
+python-dotenv==1.0.0
