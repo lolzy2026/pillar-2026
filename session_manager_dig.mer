@@ -1,0 +1,14 @@
+
+flowchart LR
+    SM[SessionManager] --> MCP[MultiServerMCPClient]
+    MCP --> SERVER[MCP Server]
+
+    SM --> EH[ElicitationHandler]
+    EH --> REDISMOD[RedisModule]
+
+    REDISMOD --> STREAM[Redis Stream assist elicitation replies]
+    REDISMOD --> PENDING[Redis pending elicitation keys]
+
+    STREAM --> EH
+    EH --> SM
+
