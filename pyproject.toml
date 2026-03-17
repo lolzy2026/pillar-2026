@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "assist-service"
+version = "0.1.0"
+description = "Minimal MCP session manager with Redis-stream elicitation handling"
+requires-python = ">=3.11"
+dependencies = [
+  "redis>=5.0.0",
+  "langchain-mcp-adapters>=0.2.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
